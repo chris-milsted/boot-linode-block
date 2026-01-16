@@ -16,19 +16,19 @@ We now have a VM which is uniquely identified.
 
 3. Create a block volume, and attack it to the linode in the GUI, Note make the volume the same size as the disk in the VM. In my case I used an 80GB volume.
 
-[block storage attached to linode](./Screenshot%20from%202026-01-16%2011-00-45.png)
+![block storage attached to linode](./Screenshot%20from%202026-01-16%2011-00-45.png)
 
 4. Power off the linode and re-boot it into rescue mode
 
-[click rescue](./Screenshot%20from%202026-01-16%2011-03-09.png)
+![click rescue](./Screenshot%20from%202026-01-16%2011-03-09.png)
 
 5. Make sure you attach the external disk to the Linode as well as the internal drives
 
-[Add the boot disk as /dev/sdc](./Screenshot%20from%202026-01-16%2011-04-07.png)
+![Add the boot disk as /dev/sdc](./Screenshot%20from%202026-01-16%2011-04-07.png)
 
 6. Open a Lish console, you should get a finnix prompt. Run a dd copy of the disk to copy the OS onto the external disk.
 
-[glish with dd copy command](./Screenshot%20from%202026-01-16%2011-17-51.png)
+![glish with dd copy command](./Screenshot%20from%202026-01-16%2011-17-51.png)
 
 NOTE actual dd command that worked and was used was:
 
